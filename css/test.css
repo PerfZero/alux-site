@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c4978e;
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #d9a394;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-left,
+  .footer-right,
+  .mailing-list {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .footer-left {
+    max-width: 400px;
+  }
+  
+  .footer-left .logo {
+    max-width: 150px;
+  }
+  
+  .footer-left nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-left nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .footer-left nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-left h3,
+  .footer-right h3,
+  .mailing-list h3 {
+    margin-top: 0;
+  }
+  
+  .footer-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-left ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-right p {
+    margin: 5px 0;
+  }
+  
+  .mailing-list form {
+    display: flex;
+  }
+  
+  .mailing-list input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .mailing-list button {
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  

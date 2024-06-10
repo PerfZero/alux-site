@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <meta name="description" content="Описание страницы для поисковых систем" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- MOBILE SCREEN -->
+    <input type="checkbox" id="menu" />
+    <!-- END MOBILE SCREEN -->
+    <header>
+      <div class="wrapper">
+        <div class="container">
+          <img src="/img/logo.png" alt="" class="logo" />
+          <!-- MOBILE SCREEN -->
+          <label for="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+          <!-- END MOBILE SCREEN -->
+          <nav>
+            <ul>
+              <li><a href="/">HOME</a></li>
+              <li><a href="/about.html" class="about-link">ABOUT</a></li>
+              <li><a href="/project.html" class="project-link">PROJECTS</a></li>
+              <li><a href="/news.html">NEWS</a></li>
+              <li><a href="/Investments.html">INVESTMENTS</a></li>
+              <li><a href="/contact.html">CONTACT</a></li>
+            </ul>
+            <div class="time-to-date-mobile">
+              <div class="global__time-mobile" id="globalTime">22:45</div>
+              <div class="global__date-mobile">
+                <p>UTC +3:30</p>
+                <p id="globalDate">30.05.2024</p>
+              </div>
+            </div>
+            <div class="lang-mobile-first">
+              <ul>
+                <li class="dropdown-item">RU</li>
+                <li class="dropdown-item">FR</li>
+                <li class="dropdown-item">DE</li>
+                <li class="dropdown-item">ES</li>
+              </ul>
+            </div>
+          </nav>
+          <div class="time-to-date">
+            <div class="global__time" id="globalTime">22:45</div>
+            <div class="global__date">
+              <p>UTC +3:30</p>
+              <p id="globalDate">30.05.2024</p>
+            </div>
+          </div>
+          <div class="lang">
+            <p class="current-lang">RU</p>
+            <img src="/img/search.svg" alt="search" class="searc" />
+            <div class="dropdown">
+              <ul class="dropdown-list">
+                <li class="dropdown-item">EN</li>
+                <li class="dropdown-item">FR</li>
+                <li class="dropdown-item">DE</li>
+                <li class="dropdown-item">ES</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="color__breeze-header"></div>
+      <section id="section1">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slider1">
+              <img src="/img/slider_1.png" alt="" />
+              <p>Wealth From The Earth</p>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide slider2">
+              <img src="/img/slider_2.png" alt="" />
+              <p>Wealth From The Earth</p>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide slider3">
+              <img src="/img/slider_3.png" alt="" />
+              <p>Wealth From The Earth</p>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide slider4">
+              <img src="/img/slider_4.png" alt="" />
+              <p>Wealth From The Earth</p>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide slider5">
+              <img src="/img/slider_5.png" alt="" />
+              <p>Welcome To IRKAZ Metal Corporation</p>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="color__breeze"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__wrapper">
+          <h2>Subscribe to our newsletter</h2>
+          <form action="back__email">
+            <div class="text__text">
+              <input required type="text" placeholder="First Name" />
+              <input required type="text" placeholder="Last Name" />
+              <input required type="text" placeholder="Email" />
+            </div>
+            <button type="submit">SUBMIT</button>
+          </form>
+          <div class="menu__logo">
+            <img src="/img/footer_logo.png" alt="" />.
+            <div class="main__footer-text">
+              <div class="footer_1">
+                <h3>HOME</h3>
+              </div>
+              <div class="footer_2">
+                <h3>ABOUT</h3>
+                <a href=""><p>About Us</p></a>
+                <a href=""><p>Our Mission</p></a>
+              </div>
+              <div class="footer_3">
+                <h3>PROJECTS</h3>
+                <a href=""><p>Operation</p></a>
+                <a href=""><p>Sustainability</p></a>
+                <a href=""><p>Product</p></a>
+                <div class="parent">
+                  <ul>
+                    <li>Product standard and certifications</li>
+                    <li>Quality Assurance and Precision</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer_4">
+                <h3>NEWS</h3>
+              </div>
+              <div class="footer_5">
+                <h3>INVESTMENTS</h3>
+              </div>
+              <div class="footer_6">
+                <h3>CONTACT</h3>
+                <h4>Head office:</h4>
+                <p>LLP "IRKAZ Metal Corporation"</p>
+                <p class="contact__address">
+                  Legal address: Republic of Kazakhstan, Almaty, Al-Farabi Ave,
+                  7 к5A, office 218
+                </p>
+                <p class="contact__phone">CТ: +7 (727) 311-02-82</p>
+                <p class="contact__email">Email: info@irkazmetal.kz</p>
+                <h4>Plant at the Borly deposit:</h4>
+                <p>LLP "IRKAZ Metal Corporation"</p>
+                <p class="contact__address">
+                  Legal address: Karaganda region, Aktogay district. rural
+                  district Ortaderesinsky, Orta Deresin village, Bektauata
+                  tract, plot 1211
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
