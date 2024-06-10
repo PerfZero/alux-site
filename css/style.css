@@ -910,7 +910,9 @@ form button:hover {
   }
 
   .product button {
-    left: 0;
+    padding: 0 55px;
+    left: 0%;
+    align-self: center;
   }
 
   .image__work-item {
