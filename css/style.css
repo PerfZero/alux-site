@@ -254,6 +254,7 @@ footer {
   height: auto;
   padding-bottom: 50px;
   color: #fff;
+  margin-top: -6px;
 }
 
 .main__footer-text div p,
@@ -433,7 +434,7 @@ form button:hover {
 .our_mission button {
   background-image: url(/img/button.png);
   border-radius: 15px;
-  width: 347px;
+  max-width: 347px;
   height: 74px;
   font-weight: 700;
   font-size: 20px;
@@ -914,10 +915,18 @@ form button:hover {
     justify-content: center;
   }
   .invest__text button {
-
     left: 0;
-
-}
+  }
+  .lang p::after {
+    content: url(/img/arrow_w.svg);
+    padding-left: 15px;
+  }
+  
+  .about-link::after,
+  .project-link::after {
+    content: url(/img/arrow_w.svg);
+    padding-left: 15px;
+  }
 }
 @media (max-width: 768px) {
   .text__text {
