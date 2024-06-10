@@ -881,7 +881,9 @@ form button:hover {
   }
 
   .our_mission button {
+    padding: 0 55px;
     left: 0%;
+    align-self: center;
   }
 
   .about__block img {
