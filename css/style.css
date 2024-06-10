@@ -51,6 +51,10 @@ header .logo{
   width: 250px;
 }
 
+#menu{
+  display: none;
+}
+
 .wrapper .container {
   display: flex;
   justify-content: space-between;
@@ -742,7 +746,7 @@ form button:hover {
 @media (max-width: 1180px) {
   nav {
     position: absolute;
-    top: 153px;
+    top: 137px;
     background: #00878a;
     left: 0;
     flex-direction: column;
