@@ -46,12 +46,11 @@ a {
   padding: 34px 0;
 }
 
-
-header .logo{
+header .logo {
   width: 250px;
 }
 
-#menu{
+#menu {
   display: none;
 }
 
@@ -216,6 +215,26 @@ header .logo{
 
 #section1 {
   text-align: center;
+}
+
+.dropdown-menu-about {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 5;
+  display: none !important;
+  gap: 15px;
+  border-radius: 15px;
+}
+
+.dropdown-menu-about li {
+  padding-bottom: 15px;
+}
+
+.dropdown-menu-about li:last-child {
+  padding-bottom: 0;
 }
 
 .swiper-button-prev,
@@ -680,8 +699,49 @@ form button:hover {
   background-repeat: no-repeat;
 }
 
+.two-menu {
+  left: 170px;
+  top: 80px;
+  display: flex;
+}
+
+.dropdown-menu-about ul a {
+  font-weight: 400 !important;
+}
+
+.dropdown-menu-about > li > a {
+  font-weight: 400 !important;
+}
 .current-lang {
   cursor: pointer;
+}
+
+.product__menu::after {
+  content: url(/img/after.svg);
+}
+
+.dropdown-pod-menu-about {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 5;
+  gap: 15px;
+  border-radius: 15px;
+  display: none !important;
+}
+
+.dropdown-about:hover .dropdown-menu-about {
+  display: block !important;
+}
+
+.product__menu:hover .two-menu {
+  display: block !important;
+}
+
+.dropdown-project:hover .dropdown-menu-about {
+  display: block !important;
 }
 
 .searc {
@@ -934,12 +994,58 @@ form button:hover {
     content: url(/img/arrow_w.svg);
     padding-left: 15px;
   }
-  
+
   .about-link::after,
   .project-link::after {
     content: url(/img/arrow_w.svg);
     padding-left: 15px;
   }
+  .dropdown-menu-about {
+    position: relative;
+    background-color: #fff0;
+  }
+
+  .dropdown-about {
+    text-align: center;
+  }
+
+  .dropdown-project {
+    text-align: center;
+  }
+
+  .about-link:hover {
+    color: #fff !important;
+  }
+
+  .project-link:hover {
+    color: #fff !important;
+  }
+
+  .project-link:hover {
+    color: #fff !important;
+  }
+
+  .dropdown-menu-about li a {
+    text-decoration: underline;
+    color: #008080;
+  }
+  .dropdown-menu-about ul {
+    text-decoration: underline;
+  }
+
+  .product__menu::after {
+    content: none;
+}
+
+.dropdown-pod-menu-about{
+  position: relative;
+  background-color: #fff0;
+}
+
+.two-menu{
+  left: 0;
+  top: 0;
+}
 }
 @media (max-width: 768px) {
   .text__text {

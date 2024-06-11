@@ -21,32 +21,3 @@ updateTimeAndDate();
 // Update every second
 setInterval(updateTimeAndDate, 1000);
 
-document.querySelector('.lang').addEventListener('click', function() {
-    this.querySelector('.dropdown').classList.toggle('show');
-});
-
-window.addEventListener('click', function(event) {
-    if (!event.target.matches('.lang, .lang *')) {
-        var dropdowns = document.querySelectorAll('.dropdown');
-        dropdowns.forEach(function(dropdown) {
-            if (dropdown.classList.contains('show')) {
-                dropdown.classList.remove('show');
-            }
-        });
-    }
-});
-
-document.querySelector('.lang').addEventListener('click', function() {
-    this.querySelector('.dropdown').classList.toggle('show');
-});
-
-window.addEventListener('click', function(event) {
-    if (!event.target.matches('.lang, .lang *')) {
-        var dropdowns = document.querySelectorAll('.dropdown');
-        dropdowns.forEach(function(dropdown) {
-            if (dropdown.classList.contains('show')) {
-                dropdown.classList.remove('show');
-            }
-        });
-    }
-});

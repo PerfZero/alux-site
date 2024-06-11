@@ -38,9 +38,35 @@
           <!-- END MOBILE SCREEN -->
           <nav>
             <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="/about.html" class="about-link">ABOUT</a></li>
-              <li><a href="/project.html" class="project-link">PROJECTS</a></li>
+              <li>
+                <a href="/">HOME</a>
+              </li>
+              <li class="dropdown-about">
+                <a href="#" class="about-link">ABOUT</a>
+                <ul class="dropdown-menu-about">
+                  <li><a href="/about/history.html">About Us</a></li>
+                  <li><a href="/about/team.html">Our Mission</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-project">
+                <a href="#" class="project-link">PROJECTS</a>
+                <ul class="dropdown-menu-about">
+                  <li><a href="/project/current.html">Operation</a></li>
+                  <li><a href="/project/past.html">Sustainability</a></li>
+                  <li class="product__menu"><a  href="#">Product</a>
+                    <ul class="dropdown-pod-menu-about two-menu">
+                      <!-- Здесь начинается подменю Product -->
+                      <li><a href="/product/new.html">Product standard
+                        and certifications</a></li>
+                      <li>
+                        <a href="/product/featured.html">Quality Assurance
+                          and Precision</a>
+                      </li>
+                    </ul></li>
+                  
+                  <!-- Здесь заканчивается подменю Product -->
+                </ul>
+              </li>
               <li><a href="/news.html">NEWS</a></li>
               <li><a href="/Investments.html">INVESTMENTS</a></li>
               <li><a href="/contact.html">CONTACT</a></li>
