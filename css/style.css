@@ -233,6 +233,12 @@ header .logo {
   padding-bottom: 15px;
 }
 
+.map{
+  background-image: url(/img/map.png);
+  height: 500px;
+  margin-bottom: 50px;
+}
+
 .dropdown-menu-about li:last-child {
   padding-bottom: 0;
 }
