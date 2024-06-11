@@ -22,7 +22,10 @@
     <header>
       <div class="wrapper">
         <div class="container">
-          <img src="/img/logo.svg" alt="" class="logo" />
+          <a href="/">
+            <img src="/img/logo.svg" alt="Logo" class="logo" />
+          </a>
+          
           <!-- MOBILE SCREEN -->
           <label for="menu">
             <div></div>
@@ -32,9 +35,35 @@
           <!-- END MOBILE SCREEN -->
           <nav>
             <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="/about.html" class="about-link">ABOUT</a></li>
-              <li><a href="/project.html" class="project-link">PROJECTS</a></li>
+              <li>
+                <a href="/">HOME</a>
+              </li>
+              <li class="dropdown-about">
+                <a href="/about.html" class="about-link">ABOUT</a>
+                <ul class="dropdown-menu-about">
+                  <li><a href="/about.html#about">About Us</a></li>
+                  <li><a href="/about.html#mission">Our Mission</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-project">
+                <a href="/project.html" class="project-link">PROJECTS</a>
+                <ul class="dropdown-menu-about">
+                  <li><a href="/project.html#projects">Operation</a></li>
+                  <li><a href="/project.html#sustainability">Sustainability</a></li>
+                  <li class="product__menu"><a  href="#">Product</a>
+                    <ul class="dropdown-pod-menu-about two-menu">
+                      <!-- Здесь начинается подменю Product -->
+                      <li><a href="/project.html#product-standard">Product standard
+                        and certifications</a></li>
+                      <li>
+                        <a href="/project.html#quality-assurance">Quality Assurance
+                          and Precision</a>
+                      </li>
+                    </ul></li>
+                  
+                  <!-- Здесь заканчивается подменю Product -->
+                </ul>
+              </li>
               <li><a href="/news.html">NEWS</a></li>
               <li><a href="/Investments.html">INVESTMENTS</a></li>
               <li><a href="/contact.html">CONTACT</a></li>
@@ -95,7 +124,8 @@
         <div class="container">
           <div class="about__block">
             <div class="about__main-tex">
-            <H1>ABOUT US</H1>
+              <h1 id="about">ABOUT US</h1>
+
             <p>Irkaz Metal Corporation IMC copper production company
               with headquarter in Almaty- Kazakhstan at Al-Farabi Ave,7
               K5A, Office #218 and Plant at the Borly Deposit, Karaganda
@@ -108,9 +138,8 @@
           </div>
           <div class="our_mission">
             <div class="our__mission-text">
-            <h2>
-              Our Mission
-            </h2>
+              <h2 id="mission">Our Mission</h2>
+
             <p>Mission is to invest and establish production plants, in mining and production of copper, iron,
               Nickel, Lithium, Cobalt and other novel metals. Presently Copper Cathode production started
               in Kazakhstan. The reason we gave importance to copper, is the world policy to have clean Air

@@ -22,7 +22,10 @@
     <header>
       <div class="wrapper">
         <div class="container">
-          <img src="/img/logo.svg" alt="" class="logo" />
+          <a href="/">
+            <img src="/img/logo.svg" alt="Logo" class="logo" />
+          </a>
+          
           <!-- MOBILE SCREEN -->
           <label for="menu">
             <div></div>
@@ -32,9 +35,35 @@
           <!-- END MOBILE SCREEN -->
           <nav>
             <ul>
-              <li><a href="/">HOME</a></li>
-              <li><a href="/about.html" class="about-link">ABOUT</a></li>
-              <li><a href="/project.html" class="project-link">PROJECTS</a></li>
+              <li>
+                <a href="/">HOME</a>
+              </li>
+              <li class="dropdown-about">
+                <a href="/about.html" class="about-link">ABOUT</a>
+                <ul class="dropdown-menu-about">
+                  <li><a href="/about.html#about">About Us</a></li>
+                  <li><a href="/about.html#mission">Our Mission</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-project">
+                <a href="/project.html" class="project-link">PROJECTS</a>
+                <ul class="dropdown-menu-about">
+                  <li><a href="/project.html#projects">Operation</a></li>
+                  <li><a href="/project.html#sustainability">Sustainability</a></li>
+                  <li class="product__menu"><a  href="#">Product</a>
+                    <ul class="dropdown-pod-menu-about two-menu">
+                      <!-- Здесь начинается подменю Product -->
+                      <li><a href="/project.html#product-standard">Product standard
+                        and certifications</a></li>
+                      <li>
+                        <a href="/project.html#quality-assurance">Quality Assurance
+                          and Precision</a>
+                      </li>
+                    </ul></li>
+                  
+                  <!-- Здесь заканчивается подменю Product -->
+                </ul>
+              </li>
               <li><a href="/news.html">NEWS</a></li>
               <li><a href="/Investments.html">INVESTMENTS</a></li>
               <li><a href="/contact.html">CONTACT</a></li>
@@ -95,7 +124,7 @@
         <div class="container">
           <div class="our_mission">
             <div class="our__mission-text">
-              <h2>OUR PROJECTS</h2>
+              <h2 id="projects">OUR PROJECTS</h2>
               <p>
                 Irkaz metal Corporation annual production is 5000 ton of Copper
                 Cathode. The unrivaled quality in every sheet of the copper
@@ -115,79 +144,83 @@
       </section>
       <section class="product">
         <div class="container">
-        <h3>Product standard and certifications</h3>
-        <h4>GOST Certification:</h4>
-        <p>
-          Our copper cathodes hold the prestigious GOST certificate, a testament
-          to their compliance with Russian and international quality standards.
-          This certification underscores our commitment to delivering a product
-          of the highest caliber
-        </p>
-        <h4>ASTM B 115 Standard:</h4>
-        <p>
-          Rest assured, our copper cathodes adhere to the stringent ASTM B 115
-          standard, guaranteeing a level of quality that is recognized and
-          respected on a global scale
-        </p>
-        <button type="submit">Copper vital Human</button>
-        <div class="pic">
-          <img src="/img/document.png" alt="" />
-          <img src="/img/document.png" alt="" />
-        </div>
-        <h3>Quality Assurance and Precision</h3>
-        <p>
-          The beating heart of precision and quality assurance is our Laboratory
-          division. The Laboratory is equipped with high technology apparatus
-          and manage by well skilled professionals is responsible to deploy the
-          highest standards in copper production and lead the trend of the best
-          quality products. The Laboratory, commitments begin with careful
-          selection of raw materials, extending that to every phase of the
-          leaching process by analyzing in each step to ensure our products meet
-          the benchmarks.
-        </p>
-        <button type="submit">Copper vital Human</button>
-        <div class="image__work">
-          <div class="image__work-item">
-            <img src="/img/Frame 100.png" alt="" class="image__item" /><img
-              src="/img/Frame 95.png"
-              alt=""
-              class="image__item"
-            /><img src="/img/Frame 102.png" alt="" class="image__item" /><img
-              src="/img/Frame 95.png"
-              alt=""
-              class="image__item"
-            /><img src="/img/Frame 95.png" alt="" class="image__item" /><img
-              src="/img/Frame 95.png"
-              alt=""
-              class="image__item"
-            /><img src="/img/Frame 95.png" alt="" class="image__item" /><img
-              src="/img/Frame 95.png"
-              alt=""
-              class="image__item"
-            /><img src="/img/Frame 95.png" alt="" class="image__item" />
+          <h3 id="product-standard">Product standard and certifications</h3>
+
+          <h4>GOST Certification:</h4>
+          <p>
+            Our copper cathodes hold the prestigious GOST certificate, a
+            testament to their compliance with Russian and international quality
+            standards. This certification underscores our commitment to
+            delivering a product of the highest caliber
+          </p>
+          <h4>ASTM B 115 Standard:</h4>
+          <p>
+            Rest assured, our copper cathodes adhere to the stringent ASTM B 115
+            standard, guaranteeing a level of quality that is recognized and
+            respected on a global scale
+          </p>
+          <button type="submit">Copper vital Human</button>
+          <div class="pic">
+            <img src="/img/document.png" alt="" />
+            <img src="/img/document.png" alt="" />
           </div>
+          <h3 id="quality-assurance">Quality Assurance and Precision</h3>
+
+          <p>
+            The beating heart of precision and quality assurance is our
+            Laboratory division. The Laboratory is equipped with high technology
+            apparatus and manage by well skilled professionals is responsible to
+            deploy the highest standards in copper production and lead the trend
+            of the best quality products. The Laboratory, commitments begin with
+            careful selection of raw materials, extending that to every phase of
+            the leaching process by analyzing in each step to ensure our
+            products meet the benchmarks.
+          </p>
+          <button type="submit">Copper vital Human</button>
+          <div class="image__work">
+            <div class="image__work-item">
+              <img src="/img/Frame 100.png" alt="" class="image__item" /><img
+                src="/img/Frame 95.png"
+                alt=""
+                class="image__item"
+              /><img src="/img/Frame 102.png" alt="" class="image__item" /><img
+                src="/img/Frame 95.png"
+                alt=""
+                class="image__item"
+              /><img src="/img/Frame 95.png" alt="" class="image__item" /><img
+                src="/img/Frame 95.png"
+                alt=""
+                class="image__item"
+              /><img src="/img/Frame 95.png" alt="" class="image__item" /><img
+                src="/img/Frame 95.png"
+                alt=""
+                class="image__item"
+              /><img src="/img/Frame 95.png" alt="" class="image__item" />
+            </div>
+          </div>
+          <h3 id="sustainability">Sustainability</h3>
+
+          <p>
+            Aside of all the technical development protection of surrounding
+            environment and Safety and Health of all employees is our highest
+            priority. Management believes that these aspects consideration are
+            integral to, and compatible with, all other functions in the
+            organization and that proper management of these task will enhance
+            production and reduce costs. Our approach towards these is to
+            continuously improve performance through implementing robust
+            management systems and providing adequate training, safety incentive
+            and occupational health programs. We are deeply committed to
+            engaging and building trusting, ongoing relationships with the
+            people most impacted by our operations. IMC is committed to
+            fostering a culture that is inclusive and representative of the
+            communities where we operate. The vast majority of our employees are
+            from the local society where we operate. One of our greatest
+            opportunities to contribute to our host communities is through local
+            employment and capacity building. Local employment directly
+            contributes to the economic and social development of surrounding
+            communities.
+          </p>
         </div>
-        <h3>Sustainability</h3>
-        <p>
-          Aside of all the technical development protection of surrounding
-          environment and Safety and Health of all employees is our highest
-          priority. Management believes that these aspects consideration are
-          integral to, and compatible with, all other functions in the
-          organization and that proper management of these task will enhance
-          production and reduce costs. Our approach towards these is to
-          continuously improve performance through implementing robust
-          management systems and providing adequate training, safety incentive
-          and occupational health programs. We are deeply committed to engaging
-          and building trusting, ongoing relationships with the people most
-          impacted by our operations. IMC is committed to fostering a culture
-          that is inclusive and representative of the communities where we
-          operate. The vast majority of our employees are from the local society
-          where we operate. One of our greatest opportunities to contribute to
-          our host communities is through local employment and capacity
-          building. Local employment directly contributes to the economic and
-          social development of surrounding communities.Заголовок
-        </p>
-      </div>
       </section>
     </main>
     <footer>
@@ -210,13 +243,13 @@
               </div>
               <div class="footer_2">
                 <h3>ABOUT</h3>
-                <a href=""><p>About Us</p></a>
-                <a href=""><p>Our Mission</p></a>
+                <a href="/about.html#about"><p>About Us</p></a>
+                <a href="/about.html#mission"><p>Our Mission</p></a>
               </div>
               <div class="footer_3">
                 <h3>PROJECTS</h3>
-                <a href=""><p>Operation</p></a>
-                <a href=""><p>Sustainability</p></a>
+                <a href="/project.html#projects"><p>Operation</p></a>
+                <a href="/project.html#sustainability"><p>Sustainability</p></a>
                 <a href=""><p>Product</p></a>
                 <div class="parent">
                   <ul>

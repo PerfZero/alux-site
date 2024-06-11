@@ -543,7 +543,7 @@ form button:hover {
 .image__work-item {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 5px;
 }
 
 .image__work {
@@ -707,6 +707,9 @@ form button:hover {
 
 .dropdown-menu-about ul a {
   font-weight: 400 !important;
+  font-size: 16px !important;
+  width: 250px;
+  display: inline-block;
 }
 
 .dropdown-menu-about > li > a {
