@@ -21,3 +21,13 @@ updateTimeAndDate();
 // Update every second
 setInterval(updateTimeAndDate, 1000);
 
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('menu').classList.remove('active');
+    });
+});
+
+// Example for showing/hiding menu (you can adapt it to your needs)
+document.querySelector('.menu-icon').addEventListener('click', () => {
+    document.getElementById('menu').classList.toggle('active');
+});
