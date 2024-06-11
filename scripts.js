@@ -1,23 +1,21 @@
 function updateTimeAndDate() {
-    const offset = 3.5; // UTC +3:30
     const now = new Date();
-    const utcNow = new Date(now.getTime() + (now.getTimezoneOffset() * 60000));
-    const localTime = new Date(utcNow.getTime() + (offset * 60 * 60 * 1000));
+    const localTime = new Date(now.getTime() + (3.5 * 60 * 60 * 1000));
 
-    const hours = String(localTime.getUTCHours()).padStart(2, '0');
-    const minutes = String(localTime.getUTCMinutes()).padStart(2, '0');
-    const seconds = String(localTime.getUTCSeconds()).padStart(2, '0');
-    const day = String(localTime.getUTCDate()).padStart(2, '0');
-    const month = String(localTime.getUTCMonth() + 1).padStart(2, '0'); // Months are 0-based
-    const year = localTime.getUTCFullYear();
+    const hours = String(localTime.getHours()).padStart(2, '0');
+    const minutes = String(localTime.getMinutes()).padStart(2, '0');
+    const seconds = String(localTime.getSeconds()).padStart(2, '0');
+    const day = String(localTime.getDate()).padStart(2, '0');
+    const month = String(localTime.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+    const year = localTime.getFullYear();
 
-    document.getElementById('globalTime').textContent = `${hours}:${minutes}:${seconds}`;
-    document.getElementById('globalDate').textContent = `${day}.${month}.${year}`;
+    document.getElementById('globalTimeMobile').textContent = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('globalDateMobile').textContent = `${day}.${month}.${year}`;
+    document.getElementById('globalTimeDesktop').textContent = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('globalDateDesktop').textContent = `${day}.${month}.${year}`;
 }
 
-// Initial update
-updateTimeAndDate();
-
-// Update every second
-setInterval(updateTimeAndDate, 1000);
-
+document.addEventListener('DOMContentLoaded', function () {
+    updateTimeAndDate();
+    setInterval(updateTimeAndDate, 1000);
+});
