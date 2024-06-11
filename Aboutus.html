@@ -122,71 +122,32 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide slider6">
-              <img src="/img/INVESTMENTS.png " alt="" />
-              <p>INVESTMENTS</p>
-            </div>
-          </div>
+              <img src="/img/about_wr.png" alt="" />
+              <p>ABOUT US</p>
+            </div>          
         </div>
         <div class="color__breeze"></div>
       </section>
-      <section class="invest__text">
+      <section class="about__text">
         <div class="container">
-          <h1 class="invest__text-title">
-            For inquiries, collaborations, or information about our products and
-            services:
-          </h1>
-          <h2 class="invest__text-subtitle">Investments</h2>
-          <p class="invest__text-maintext">
-            IMC scanning and identifying the landscape for strategic investment
-            opportunities. From mining ventures to technological advancements,
-            we meticulously evaluate and select projects that align with IMC's
-            vision for excellence and growth.<br />
-            <br />
-            We are committed to making investments that not only bring financial
-            returns but also contribute to the broader goals of sustainable
-            development. Our focus extends beyond immediate gains, ensuring that
-            our investments leave a positive impact on the environment and local
-            society.<br />
-            IMC's Investment and Development thrives based on innovation
-            therefore, we actively seek out and support projects that introduce
-            cutting-edge solutions and technologies, positioning IMC as a
-            successful investor. Now a day the most crucial subject is to have
-            Utilities from a sustainable source. This strategic move aims to
-            ensure a stable supply of water and electricity, aligning with
-            ecological standards. For sake of this we started on exploration
-            work on a water field near our plant to prepare a bed for further
-            expansion of the existing cathode plant.<br />
-            <br />
-            To achieve further expansion of plant set up and use sulfide ore of
-            the mine, we're gearing up to develop a concentration plant. This
-            facility will enable us to extract copper from deeper layers,
-            unlocking new reservoirs of this valuable resource and fortifying
-            our position in copper industry.<br />
-            <br />
-            Recognizing the importance and criticality of supplying acid
-            sulfuric in Kazakhstan as raw materials in production process, IMC
-            is the planning to invest for establishing a sulfuric acid plant.
-            This strategic move aims to secure a stable supply of our most
-            crucial raw material, ensuring uninterrupted and efficient
-            production.<br />
-            Borly Expansion: A Global Footprint<br />
-            <br />
-            Global Mines Exploration: Our ambitions reach far beyond our current
-            operations in Borly, Kazakhstan. IMC is actively planning to invest
-            in the other mines, not only in Borly but throughout Kazakhstan and
-            globally. Our exploration efforts extend to ferrous and non-ferrous
-            mines, including promising ventures in Magnesium.<br />
-            <br />
-            At present, IMC is Exploring Global Opportunities actively engaged
-            in negotiations for mines across diverse regions. Our focus extends
-            to promising locations such as Australia, South Africa, and
-            Uzbekistan, among others.
-          </p>
-          <button type="submit">Album for photos</button>
+          <div class="about__block">
+            <div class="about__main-tex">
+              <h1 id="about">ABOUT US</h1>
+
+            <p>Irkaz Metal Corporation IMC copper production company
+              with headquarter in Almaty- Kazakhstan at Al-Farabi Ave,7
+              K5A, Office #218 and Plant at the Borly Deposit, Karaganda
+              region, Aktogaydistrict. Irkaz is a private company registered
+              and operate under the laws of Republic of Kazakhstan.
+              IMC presently owning fully established Cathode plant for
+              producing 5000 t/y copper cathode by using heap leaching process.</p>
+            </div>
+              <img src="/img/aboout_1.png" alt="">
+          </div>
+
         </div>
       </section>
     </main>
-
     <footer>
       <div class="container">
         <div class="footer__wrapper">
@@ -279,5 +240,31 @@ All rights reserved
     </footer>
 
     <script src="scripts.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      З;
+    </script>
   </body>
 </html>
