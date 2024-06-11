@@ -856,7 +856,7 @@ form button:hover {
 
 .footer__main_menu h3::before {
   content: url(/img/water.svg);
-  padding-right: 15px;
+  padding-right: 8px;
 }
 
 .footer_3 {
@@ -876,6 +876,19 @@ form button:hover {
   cursor: pointer;
   text-align: center;
 }
+
+.chet{
+  display: flex;
+  justify-content: center;
+  gap: 15px;  
+  margin: 50px 0;
+}
+
+.chet p {
+font-size: 26px;
+cursor: pointer;
+}
+
 
 .dropdown-item:hover {
   background-color: #f1f1f1;
