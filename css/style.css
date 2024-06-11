@@ -280,20 +280,38 @@ header .logo {
 footer {
   background-color: #c28b82;
   height: auto;
-  padding-bottom: 50px;
   color: #fff;
   margin-top: -6px;
 }
 
+.footer_2 h3::before {
+  display: flex;
+  content: url(/img/water.svg);
+  padding-right: 5px;
+}
+
+.footer__wrapper {
+  position: relative;
+}
+
 .main__footer-text div p,
 h3 {
-  padding-top: 15px;
+  padding-top: 5px;
+}
+
+.sub-sub-menu-footer p {
+  font-size: 12px;
+}
+
+.PROJECTS_menu {
+  max-width: 176px;
 }
 
 .main__footer-text div p,
 h4 {
   padding-bottom: 15px;
   color: #fff;
+  padding-left: 30px;
 }
 
 .main__footer-text div,
@@ -308,8 +326,66 @@ footer h2 {
   padding: 30px 0;
 }
 
-footer img {
-  padding-top: 94px;
+.CONTACT_menu {
+  max-width: 359px;
+}
+
+.water__pic p {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+
+.sub-menu-footer h4 {
+  padding-left: 30px;
+}
+
+.footer__logo {
+  margin-top: 150px;
+}
+
+.water__pic img {
+  position: relative;
+  top: -12px;
+}
+
+.right .container {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.joun_title {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.join_input {
+  position: absolute;
+  bottom: 10%;
+}
+.join_input button {
+  background-color: #00878a;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 40px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 190px;
+}
+
+.water__pic {
+  display: flex;
+  padding-left: 30px !important;
+  gap: 5px;
+}
+
+.sub-sub-menu-footer {
+  padding: 0 !important;
 }
 
 input {
@@ -342,7 +418,7 @@ form {
 }
 
 .footer__wrapper {
-  max-width: 1140px;
+  max-width: 1260px;
   margin: 0 auto;
 }
 
@@ -457,6 +533,12 @@ form button:hover {
   gap: 50px;
   flex-direction: column;
   margin: 50px 0;
+}
+
+.footer_7 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
 }
 
 .our_mission button {
@@ -763,14 +845,22 @@ form button:hover {
   z-index: 999;
 }
 
-.main__footer-text div {
-  max-width: 150px;
-  width: 100%;
-  padding-bottom: 30px;
+.footer6 {
+  width: 350px;
 }
 
-.main__footer-text div:last-child {
-  max-width: 350px;
+.footer__main_menu h3 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.footer__main_menu h3::before {
+  content: url(/img/water.svg);
+  padding-right: 15px;
+}
+
+.footer_3 {
+  width: 10%;
 }
 
 .dropdown-list {
@@ -1039,17 +1129,17 @@ form button:hover {
 
   .product__menu::after {
     content: none;
-}
+  }
 
-.dropdown-pod-menu-about{
-  position: relative;
-  background-color: #fff0;
-}
+  .dropdown-pod-menu-about {
+    position: relative;
+    background-color: #fff0;
+  }
 
-.two-menu{
-  left: 0;
-  top: 0;
-}
+  .two-menu {
+    left: 0;
+    top: 0;
+  }
 }
 @media (max-width: 768px) {
   .text__text {
@@ -1063,6 +1153,14 @@ form button:hover {
   footer h2 {
     text-align: center;
   }
+
+  .join_input {
+    position: relative;
+  }
+  .join_input button {
+
+margin-left: 0; 
+}
 }
 
 @media (max-width: 430px) {
