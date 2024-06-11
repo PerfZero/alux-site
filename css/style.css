@@ -519,6 +519,7 @@ form button:hover {
   text-align: justify;
   color: #58595b;
   padding-bottom: 23px;
+  line-height: 1.4;
 }
 
 .product button {
@@ -790,7 +791,7 @@ form button:hover {
   background-color: #f1f1f1;
 }
 
-.lang:hover .dropdown {
+.current-lang:hover .dropdown {
   display: block;
 }
 
