@@ -131,16 +131,22 @@
             products meet the benchmarks.
           </p>
           <button type="submit">Album for photos</button>
-          <div class="image__work">
-            <div class="image__work-item">
-              <img src="/img/Frame 102.png" alt="" class="image__item" />
-              <img src="/img/Frame 100.png" alt="" class="image__item" />
-              <img src="/img/Frame 99.png" alt="" class="image__item" />
-              <img src="/img/Frame 98.png" alt="" class="image__item" />
-              <img src="/img/Frame 97.png" alt="" class="image__item" />
-              <img src="/img/Frame 96.png" alt="" class="image__item" />
+          <div class="image-slider" style="margin-top: 50px; overflow: hidden;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/img/Frame 102.png" alt="" class="image__item" /></div>
+              <div class="swiper-slide"><img src="/img/Frame 100.png" alt="" class="image__item" /></div>
+              <div class="swiper-slide"><img src="/img/Frame 99.png" alt="" class="image__item" /></div>
+              <div class="swiper-slide"><img src="/img/Frame 98.png" alt="" class="image__item" /></div>
+              <div class="swiper-slide"><img src="/img/Frame 97.png" alt="" class="image__item" /></div>
+              <div class="swiper-slide"><img src="/img/Frame 96.png" alt="" class="image__item" /></div>
             </div>
-          </div>
+            <!-- Если нужна пагинация -->
+            <div class="swiper-pagination" style="position: relative;
+    margin-top: 15px;"></div>
+            <!-- Если нужны кнопки навигации -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div> 
          
         </div>
       </section>
@@ -242,3 +248,23 @@
 </html>
 
 <script src="scripts.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var mySwiper = new Swiper('.image-slider', {
+    // Опции
+    slidesPerView: 3.5,
+    spaceBetween: 30,
+
+    // Пагинация
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    // Навигация
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>

@@ -262,6 +262,10 @@ header .logo {
   background: #fff;
 }
 
+.image-slider .swiper-pagination-bullet-active {
+  background: #666666;
+}
+
 .color__breeze {
   height: 15px;
   width: 100%;
