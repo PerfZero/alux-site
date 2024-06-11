@@ -240,26 +240,23 @@ header .logo {
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff;
-  border: 2px solid;
-  padding: 35px;
-  border-radius: 100%;
-  font-size: 2px;
+
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset, 50px);
 }
 
 .swiper-button-next {
   right: var(--swiper-navigation-sides-offset, 50px);
-}
+} */
 
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
   height: 12px;
   width: 12px;
   background: var(--swiper-pagination-bullet-inactive-color, #bcbcbc);
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
-}
+} */
 
 .swiper-pagination-bullet-active {
   background: #fff;
@@ -863,14 +860,48 @@ form button:hover {
   width: 10%;
 }
 
+.mySwiper {
+  height: auto;
+}
+/* Стилизация кнопок навигации */
+.oper {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.oper:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Стилизация стрелок */
+.oper::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: border-color 0.3s ease;
+}
+
+
+.mySwiper img {
+  width: 128px;
+  height: auto;
+}
+
 .dropdown-list {
   display: flex !important;
   flex-direction: column;
   gap: 0 !important;
 }
 
-.prev ,.nexf{
-  color: #AAAAAA;
+.prev,
+.nexf {
+  color: #aaaaaa;
 }
 
 .dropdown-item {
@@ -881,18 +912,17 @@ form button:hover {
   text-align: center;
 }
 
-.chet{
+.chet {
   display: flex;
   justify-content: center;
-  gap: 15px;  
+  gap: 15px;
   margin: 50px 0;
 }
 
 .chet p {
-font-size: 26px;
-cursor: pointer;
+  font-size: 26px;
+  cursor: pointer;
 }
-
 
 .dropdown-item:hover {
   background-color: #f1f1f1;
@@ -1175,9 +1205,8 @@ cursor: pointer;
     position: relative;
   }
   .join_input button {
-
-margin-left: 0; 
-}
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 430px) {
