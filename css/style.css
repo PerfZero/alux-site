@@ -119,6 +119,10 @@ header .logo {
   text-decoration: underline;
 }
 
+.footer__main_menu a {
+color:#fff;
+}
+
 .lang p::after {
   content: url(/img/arrow.svg);
   padding-left: 15px;
