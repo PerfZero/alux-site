@@ -1150,8 +1150,8 @@ text-align: center;
   }
 
   .swiper {
-    height: auto;
-  }
+height: auto;
+        max-width: 100%;  }
 
   .color__breeze {
     height: 0;
