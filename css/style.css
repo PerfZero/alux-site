@@ -264,6 +264,10 @@ font-size: 18px;
 
 }
 
+.CONTACT_menu a{
+color:#fff;
+}
+
 /* .swiper-button-prev {
   left: var(--swiper-navigation-sides-offset, 50px);
 }
