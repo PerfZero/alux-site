@@ -60,6 +60,10 @@ header .logo {
   align-items: center;
 }
 
+.current-lang .dropdown-item:after{
+ba
+}
+
 .wrapper .container ul {
   grid-template-columns: 150px 150px 150px;
   display: grid;
