@@ -1146,8 +1146,8 @@ text-align: center;
   }
 
   .swiper img {
-    height: 504px;
-  }
+height: auto;
+        max-width: 100%;   }
 
   .swiper {
 height: auto;
